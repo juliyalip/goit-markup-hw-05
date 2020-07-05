@@ -31,7 +31,7 @@ li {list-style: none;
 .navigac:hover, .navigac:focus,
 .contact:hover, .contact:focus
 {color: var(--activ-text-color);
---color3: var(--activ-text-color)
+fill: var(--activ-text-color)
      }
    
     
@@ -44,6 +44,9 @@ li {list-style: none;
     align-items: center;
     color: var(--stile-text-color);
     line-height: 1.14;
+    fill: var(--stile-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
            }
 /*aktivnaya ssulka*/
 .current {color: var(--activ-text-color);}
@@ -103,8 +106,9 @@ margin-bottom: 0;
     padding-bottom: 32px;
     margin-top: 0;
     margin-bottom: 0;
-
-line-height: 1.5;}
+    color: var(--stile-text-color);
+line-height: 1.5;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .adres-nav {display: flex;
 margin-left: auto;
@@ -214,7 +218,6 @@ margin-bottom: 94px;}
 
 .works-list {
     width: 370px;
-      border: 1px solid red;
     position: relative;
 }
 
@@ -263,8 +266,7 @@ line-height: 1.9;}
 
 .social-links { margin-top: 10px;
     margin-bottom: 16px;
-    
-    line-height: 1.8; 
+     line-height: 1.8; 
     color: var(--stile-text-color);}
 
 .seti {display: flex;
@@ -282,12 +284,16 @@ line-height: 1.9;}
     background-position: center;
     border-radius: 50%;
    justify-content: center;
-align-items: center;}
+align-items: center;
+fill: #AFB1B8;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.fon-s:hover {background: var(--activ-button-color);
+.fon-s:hover,
+.fon-s:focus {background: var(--activ-button-color);
 fill: #FFFFFF;}
 
-.fon-s {fill: #AFB1B8;}
+/*.fon-s {fill: #AFB1B8;}*/
 
 
 /* postoyannue klientu */
@@ -303,6 +309,7 @@ justify-content: center;}
 .klientu-list .klientu-items + .klientu-items {margin-left: 30px;}
 
 .border-klientu {
+    fill: #afb1b8;
     display: flex;
     width: 170px;
 height: 90px;
@@ -310,9 +317,12 @@ border: 1px solid #AFB1B8;
 border-radius: 4px;
 justify-content: center;
 align-items: center;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.border-klientu:hover {border: 1px solid #2196F3;
-    --color5: #2196F3;}
+.border-klientu:hover,
+.border-klientu:focus {
+    border: 1px solid var( --activ-text-color);
+    fill: var( --activ-text-color);}
 
 
 
@@ -356,6 +366,7 @@ padding-left: 0;}
      border-radius: 50%;
      justify-content: center;
      align-items: center;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
   
 .link-seti:hover {
