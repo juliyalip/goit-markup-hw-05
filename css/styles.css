@@ -452,6 +452,7 @@ margin-right: 30px;
 .image-container {
     width: 370px;
     position: relative;
+    overflow: hidden;
     
 }
 
@@ -464,7 +465,6 @@ margin-right: 30px;
    height: 100%;
    padding: 63px 24px;
    bottom: 0;
-   opacity: 0;
    color:#FFFFFF;
    background-color: #2196F3;
 font-size: 18px;
@@ -481,8 +481,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .galeri-list:hover .text-box {transform: translateY(-294px);
     position: absolute;
-       opacity: 1;
-           }
+                 }
 
 .subtitle {margin-top: 0;
     margin-bottom: 0;
