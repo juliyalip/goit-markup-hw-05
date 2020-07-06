@@ -404,7 +404,9 @@ padding-left: 0;}
          padding: 6px 22px;
          font-size: 16px;
          font-weight: 500;
-         line-height: 1.6;}
+         line-height: 1.6;
+        transition:  background-color  250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .button:hover,
 .button:focus {
@@ -457,9 +459,6 @@ margin-right: 30px;
 
 
 
-
-
-
 .image-container {
     width: 370px;
     position: relative;
@@ -490,10 +489,11 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 2;
         }
 
-.galeri-list:hover .text-box {transform: translateY(-294px);
-    position: absolute;
-                 }
 
+
+.galeri-link:hover .text-box {transform: translateY(-100%);} 
+    
+    
 .subtitle {margin-top: 0;
     margin-bottom: 0;
      line-height: 1.9;
