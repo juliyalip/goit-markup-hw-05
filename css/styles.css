@@ -175,6 +175,8 @@ nav .nav-link:focus,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
